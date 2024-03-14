@@ -1,0 +1,11 @@
+create table server (
+	server_id mediumint not null auto_increment primary key,
+	name tinytext,
+	admin tinytext,
+	cluster tinytext,
+	url tinytext,
+	chatserver tinytext,
+	ip tinytext not null,
+	usercount mediumint,
+	lastupdated int
+);

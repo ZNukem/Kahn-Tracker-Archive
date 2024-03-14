@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+# change the following line to point to your copy of kahntracker.pl
+$tracker = "/path/to/kahntracker.pl";
+
+$running = `ps ax | grep kahntracker.pl | grep -v grep`;
+
+if ($running) {
+  print "kahntrack is running.\n";
+} else {
+  system($tracker);
+  print "kahntrack is not running, starting...\n";
+}

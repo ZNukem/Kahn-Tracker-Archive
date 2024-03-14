@@ -1,0 +1,18 @@
+
+Kahn Tracker v0.1
+----------------
+
+This is a fully-functional rewrite of the original C Kahn Tracker.
+
+The original tracker was not able to handle the fact that some Kahn
+servers are returning bad data, and it was therefore providing very
+corrupted tracker data.
+
+This version hopefully can handle all the bad data!
+
+If you find any bugs, please send them to me!
+
+Enjoy,
+Andy Grundman <tiny@descent4.org>
+http://kahncentral.net
+

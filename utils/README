@@ -1,0 +1,12 @@
+Kahn Tracker Utils v0.2
+- Andy Grundman, 2/3/00
+
+File descriptions:
+
+Plugin.pm - Kahn tracker/user data plugin for perlbot
+kahnt.cgi - Web-based Kahn Server/User Listing
+
+See the top of each file for more information.
+
+These files are released under the GPL, see the file
+COPYING for more information.

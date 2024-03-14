@@ -1,0 +1,43 @@
+
+Kahn Tracker v0.1
+-----------------
+
+If you would like to run your own Kahn tracker for your own private
+Kahn network, just follow these instructions.
+
+1. Install MySQL from www.mysql.com
+2. Create a database in MySQL for the tracker data.  I recommend using
+   the name "ktrack":
+     $ mysqladmin create ktrack
+
+3. Create the server table by running the following command:
+     $ mysql ktrack < kahntracker.mysql
+   
+   ** You may have to enter a username and password on this line:
+     $ mysql -uusername -ppassword ktrack < kahntracker.mysql
+
+4. Edit the lines for $host, $db, $dbuser and $dbpass to correspond to
+   your database host, name, user and password.
+
+5. Start your tracker!
+     $ ./kahntracker.pl
+
+   It will launch into the background.
+
+6. (Optional) Setup the provided cron job to make sure the tracker stays
+   running:
+
+   Edit trackerchk and kahntracker.cron and change the /path/to/ lines to
+   point to where you have installed the tracker.
+
+   Then install the cron file:
+     $ crontab kahntracker.cron
+
+   ** If you have an existing crontab file, append the line from 
+      kahntracker.cron to it
+
+Let me know if there are any problems with these instructions.
+
+Andy Grundman <tiny@descent4.org>
+http://www.kahncentral.net
+
